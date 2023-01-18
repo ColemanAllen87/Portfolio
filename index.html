@@ -43,6 +43,9 @@
             <a href="#portfolio">Portfolio</a>
           </li>
           <li>
+            <a href="#uidesign">UI Design</a>
+          </li>
+          <li>
             <a href="#contact">Contact</a>
           </li>
         </ul>
@@ -75,7 +78,8 @@
                   <a href="https://www.linkedin.com/in/dale-a-41a451216/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
                 </li>
                 <li>
-                  <a href="https://docs.google.com/document/d/e/2PACX-1vSOmWg005NSfGoSn6ClNeB5UakKsDw8HFZSi_iA8jngoadY-M2ucHvJ6IyCdLofo6Prc-CT7UH0Nik9/pub" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-resume fa-fw"></i> <span class="network-name">Resume</span></a>
+                  <a href="https://docs.google.com/document/d/e/2PACX-1vSOmWg005NSfGoSn6ClNeB5UakKsDw8HFZSi_iA8jngoadY-M2ucHvJ6IyCdLofo6Prc-CT7UH0Nik9/pub" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-resume fa-fw"></i> <span
+                      class="network-name">Resume</span></a>
                 </li>
 
               </ul>
@@ -102,7 +106,9 @@
             <div class="clearfix"></div>
             <h2 class="section-heading"><span>About</span><span> Me.</span></h2>
 
-            <p class="lead"> Hello and thank you for visiting my portfolio. My name is Dale Allen and I live in Las Vegas, Nevada. I'm presently pursuing a master's degree in computer science with a programming concentration. Although I have spent the majority of the last ten years working in distribution or IT, my passion for creativity inspired me to learn how to code. My eyes were opened to the amazing possibilities of coding when I first started modding Skyrim and trying to build worlds. Since then, I have been working towards my goal of becoming a full-time programmer.  </p>
+            <p class="lead"> Hello and thank you for visiting my portfolio. My name is Dale Allen and I live in Las Vegas, Nevada. I'm presently pursuing a master's degree in computer science with a programming concentration. Although I have spent
+              the majority of the last ten years working in distribution or IT, my passion for creativity inspired me to learn how to code. My eyes were opened to the amazing possibilities of coding when I first started modding Skyrim and trying to
+              build worlds. Since then, I have been working towards my goal of becoming a full-time programmer.  </p>
             <ul class="list">
               <li> <span>HTML</span> </li>
               <li> <span>CSS</span></li>
@@ -111,7 +117,7 @@
               <li><span> React</span></li>
               <li> <span>Tailwind</span></li>
             </ul>
-            </p>
+
           </div>
           <div class="col-lg-5 col-lg-offset-2 col-sm-6 collapse navbar-collapse">
             <img class="img-circle img-responsive" src="img/studying.png" alt="">
@@ -203,6 +209,21 @@
         </div>
 
         <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="https://colemanallen87.github.io/RealtorWebsite/" target="_blank" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-fire fa-3x"></i>
+              </div>
+            </div>
+            <img src="img/realtorwebsite.png" class="img-responsive" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Reaktor Website</h4>
+            <p id="small-text" class="text-muted">HTML, CSS & SASS</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 portfolio-item">
           <a href="" target="_blank" class="portfolio-link" data-toggle="modal">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -216,83 +237,99 @@
             <p id="small-text" class="text-muted">HTML, CSS & SASS</p>
           </div>
         </div>
-
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a href="https://colemanallen87.github.io/HotelSearch/" target="_blank" class="portfolio-link" data-toggle="modal">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-fire fa-3x"></i>
-              </div>
-            </div>
-            <img src="img/work.png" class="img-responsive" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Hotel Search</h4>
-            <p id="small-text" class="text-muted">HTML, CSS & SASS</p>
-          </div>
-        </div>
       </div>
     </div>
   </section>
 
-  <a name="contact"></a>
-  <div class="banner">
+  <a name="uidesign"></a>
+  <div id="carousel">
+    <div class="carousel-background">
+      <h1 class="UIDesign"> UI Design</h1>
 
-    <div class="bg-overlay4">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div>
-              <form>
-                <input name="name" type="text" class="feedback-input" placeholder="Name" />
-                <input name="email" type="text" class="feedback-input" placeholder="Email" />
-                <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-                <input type="submit" value="SUBMIT" />
-              </form>
-            </div>
-          </div>
+      <div class="carousel-wrapper">
+        <span id="item-1"></span>
+        <span id="item-2"></span>
+        <span id="item-3"></span>
+        <div class="carousel-item item-1">
+
+          <a class="arrow arrow-prev" href="#item-3"></a>
+          <a class="arrow arrow-next" href="#item-2"></a>
+        </div>
+
+        <div class="carousel-item item-2">
+
+          <a class="arrow arrow-prev" href="#item-1"></a>
+          <a class="arrow arrow-next" href="#item-3"></a>
+        </div>
+
+        <div class="carousel-item item-3">
+
+          <a class="arrow arrow-prev" href="#item-2"></a>
+          <a class="arrow arrow-next" href="#item-1"></a>
+        </div>
+      </div </div>
+    </div>
+
+    <a name="contact"></a>
+    <div class="banner">
+
+      <div class="bg-overlay4">
+        <div class="container">
+          <div class="row">
             <div class="col-lg-6">
-              <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.966892395495!2d-115.10424878509208!3d36.09429508009996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c5493d75558d%3A0x39300e6a64a3f9a!2s3341%20Casey%20Dr%2C%20Las%20Vegas%2C%20NV%2089120!5e0!3m2!1sen!2sus!4v1673934022596!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div>
+                <form>
+                  <input name="name" type="text" class="feedback-input" placeholder="Name" />
+                  <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                  <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                  <input type="submit" value="SUBMIT" />
+                </form>
               </div>
             </div>
+            <div class="col-lg-6">
+              <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.966892395495!2d-115.10424878509208!3d36.09429508009996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c5493d75558d%3A0x39300e6a64a3f9a!2s3341%20Casey%20Dr%2C%20Las%20Vegas%2C%20NV%2089120!5e0!3m2!1sen!2sus!4v1673934022596!5m2!1sen!2sus"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- /.container -->
-    </div>
-  </div>
-
-
-  <!-- /.banner -->
-
-  <!-- Footer -->
-  <footer>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <ul class="list-inline">
-            <li class="bottomfooter">
-              <a href="#">Home</a>
-            </li>
-            <li class="footer-menu-divider">&sdot;</li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li class="footer-menu-divider">&sdot;</li>
-            <li>
-              <a href="#portfolio">Portfolio</a>
-            </li>
-            <li class="footer-menu-divider">&sdot;</li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-          <p class="copyright text-muted small">Copyright &copy; Dale C Allen II. All Rights Reserved</p>
-        </div>
+        <!-- /.container -->
       </div>
     </div>
-  </footer>
+
+
+    <!-- /.banner -->
+
+    <!-- Footer -->
+    <footer>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="list-inline">
+              <li class="bottomfooter">
+                <a href="#">Home</a>
+              </li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li>
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+            <p class="copyright text-muted small">Copyright &copy; Dale C Allen II. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
 
