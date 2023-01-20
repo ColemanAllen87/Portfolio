@@ -459,143 +459,132 @@ section {
   no-repeat center center fixed;
   background-size: cover;
   height: 755px;
+  width: 100%;
 }
 
-.UIDesign {
-  text-align: center;
-  margin-top: -50px;
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {  iPhone SE /
+.carousel-background {
+background-size: cover;
+height: 755px;
+width: 100%;
+}
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) { / iPad /
+.carousel-background {
+background-size: cover;
+height: 755px;
+width: 100%;
+}
+}
+@media only screen and (min-width: 1224px) { / other media devices
+
+.carousel-background {
+background-size: cover;
+height: 755px;
+width: 100%;
+}
+}
+.UIDesign{
+  margin-top: 40px;
+  margin-bottom: 90px;
   text-shadow: 2px 1px 2px #000;
-  font-size: 5em;
+  font-size: 9rem;
   color: white;
   font-family: "Cinzel", serif;
-  padding-top: 50px;
-  padding-bottom: 20px;
+  text-align: center;
+
+}
+.rbd-review-slider {
+
 }
 
-.carousel-wrapper {
-  height: 400px;
-  position: relative;
-  width: 800px;
-  margin: 0 auto;
+.rbd-review-slider .rbd-preloader {
+	width: 36px;
+	height: 36px;
+	margin: 0 auto;
 }
 
-@media (max-width: 900px) {
-  .carousel-wrapper {
-    width: 50%;
+.rbd-review-slider .rbd-review.rbd-prev {
+	transform: translate3d(-100px,0,-50px);
+	display: inline-block;
+}
+
+.rbd-review-slider .rbd-review.rbd-next {
+	transform: translate3d(100px,0,-50px);
+	display: inline-block;
+}
+
+.rbd-review-slider .rbd-review.rbd-curr {
+	z-index: 10;
+	transform: translate3d(0,0,0) scale(1);
+	opacity: 1;
+	display: inline-block;
+}
+
+.rbd-review-slider .rbd-review {
+	padding: 20px 30px;
+	font-size: 18px;
+	line-height: 1.612;
+	border-radius: 4px;
+	box-shadow: 0 10px 30px -8px rgba(0,0,0,.5);
+
+	display: none;
+	vertical-align: top;
+	transition: opacity .35s ease-out, transform .35s ease-out;;
+	opacity: 1;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	overflow: hidden;
+	opacity: 0;
+
+	background: #fff;
+	max-width: 600px;
+}
+
+.rbd-review-slider .rbd-review.rbd-first {
+	display: block;
+}
+
+.rbd-review-slider .rbd-heading {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.rbd-review-slider svg {
+	fill: #ffbb58;
+	width: 24px;
+	margin-right: 1px;
+}
+
+.rbd-review-slider .rbd-review-meta {
+	font-size: 12px;
+	color: #565656;
+	margin-top: 12px;
+	text-align: center;
+}
+
+.rbd-review-slider .rbd-gravatar {
+  border-radius: 100%;
+  width: 100px;
+  float: left;
+  margin-right: 15px;
+	border: 6px solid transparent;
+	box-shadow: 0 3px 12px -2px rgba(0,0,0,.35);
+}
+
+.rbd-footing {
+	margin: 20px 0 0;
+	text-align: center;
+}
+
+@keyframes round{
+  25%{
+    opacity:1;
   }
-}
-
-.carousel-item {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 25px 50px;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
-}
-
-.arrow {
-  border: solid #FB2576;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 12px;
-}
-
-@media (max-width: 900px) {
-  .arrow {
-    padding: 3px;
-  }
-}
-
-.arrow-prev {
-  left: -30px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) rotate(135deg);
-}
-
-.arrow-next {
-  right: -30px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) rotate(-45deg);
-}
-
-.light {
-  color: #FB2576;
-}
-
-@media (max-width: 480px) and (min-device-width: 320px) {
-  .arrow, .light .arrow {
-    background-size: 10px;
-    background-position: 10px 50%;
-    width: 50%;
-  }
-}
-}
-
-/*Select every element*/
-[id^="item"] {
-  display: none;
-}
-
-.item-1 {
-  z-index: 2;
-  opacity: 1;
-  background-image: url(../img/food1.png);
-  background-size: cover;
-}
-
-.item-2 {
-  background-image: url(../img/ui.png);
-  background-size: cover;
-}
-
-.item-3 {
-  background-image: url(../img/logo1.png);
-  background-size: cover;
-}
-
-*:target~.item-1 {
-  opacity: 0;
-}
-
-#item-1:target~.item-1 {
-  opacity: 1;
-}
-
-#item-2:target~.item-2, #item-3:target~.item-3 {
-  z-index: 3;
-  opacity: 1;
-}
-}
-
-//*media query*/
-
-/* iPhone */
-@media only screen and (max-width: 480px) {
-  /* Add styles for iPhones here */
-  .carousel-wrapper {
-    width: 80%;
-  }
-  .UIDesign {
-    font-size: 3em;
-  }
-  .arrow {
-    padding: 5px;
-  }
-}
-
-/* iPad */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* Add styles for iPads here */
-  .carousel-wrapper {
-    width: 60%;
-  }
-  .UIDesign {
-    font-size: 4em;
+  40%{
+    opacity:0;
   }
 }
 
