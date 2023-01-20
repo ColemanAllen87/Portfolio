@@ -572,6 +572,33 @@ section {
 }
 }
 
+//*media query*/
+
+/* iPhone */
+@media only screen and (max-width: 480px) {
+  /* Add styles for iPhones here */
+  .carousel-wrapper {
+    width: 80%;
+  }
+  .UIDesign {
+    font-size: 3em;
+  }
+  .arrow {
+    padding: 5px;
+  }
+}
+
+/* iPad */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Add styles for iPads here */
+  .carousel-wrapper {
+    width: 60%;
+  }
+  .UIDesign {
+    font-size: 4em;
+  }
+}
+
 //*Email Form */
 form {
   display: inline-block;
